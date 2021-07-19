@@ -13,11 +13,11 @@ class BarcodeSetting {
   List<Value> values;
 
   BarcodeSetting(
-      {required this.name,
-      required this.length,
-      required this.values,
-      required this.startWith,
-      required this.endWith});
+      {this.name = '',
+      this.length = 0,
+      this.values = const [],
+      this.startWith = '',
+      this.endWith = ''});
 
   List<String> get getKeySuggestion => ['ID', 'Weight', 'QTY', 'Price'];
 
@@ -56,5 +56,5 @@ class Value {
     }
   }
 
-  Value({required this.key, required this.start, required this.end});
+  Value({this.key = '', this.start = 0, this.end = 0});
 }

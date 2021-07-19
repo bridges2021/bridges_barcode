@@ -27,7 +27,18 @@ class _MyAppState extends State<MyApp> {
       _barcodeSetting = BarcodeSetting(
           name: 'default',
           length: 18,
-          values: [],
+          values: [
+            Value(
+              key: 'ID',
+              start: 2,
+              end: 7,
+            ),
+            Value(key: 'price', start: 7, end: 12),
+            Value(
+              key: 'weight',
+              start: 12,
+            )
+          ],
           startWith: '22',
           endWith: '2');
     });
