@@ -1,6 +1,6 @@
 name: bridges_barcode
 description: Get value from barcode by setting
-version: 0.0.1
+version: 1.0.0
 homepage:
 
 environment:
